@@ -1,0 +1,14 @@
+C:\Users\silas\IlkUygulamam\bin\Debug\net8.0\IlkUygulamam.exe
+C:\Users\silas\IlkUygulamam\bin\Debug\net8.0\IlkUygulamam.deps.json
+C:\Users\silas\IlkUygulamam\bin\Debug\net8.0\IlkUygulamam.runtimeconfig.json
+C:\Users\silas\IlkUygulamam\bin\Debug\net8.0\IlkUygulamam.dll
+C:\Users\silas\IlkUygulamam\bin\Debug\net8.0\IlkUygulamam.pdb
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.AssemblyInfoInputs.cache
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.AssemblyInfo.cs
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.csproj.CoreCompileInputs.cache
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.dll
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\refint\IlkUygulamam.dll
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.pdb
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\IlkUygulamam.genruntimeconfig.cache
+C:\Users\silas\IlkUygulamam\obj\Debug\net8.0\ref\IlkUygulamam.dll
