@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silas\\IlkUygulamam\\IlkUygulamam.csproj",
+      "projectUniqueName": "C:\\Users\\silas\\Desktop\\github_projeler\\IlkUygulamam\\IlkUygulamam.csproj",
       "projectName": "IlkUygulamam",
-      "projectPath": "C:\\Users\\silas\\IlkUygulamam\\IlkUygulamam.csproj",
+      "projectPath": "C:\\Users\\silas\\Desktop\\github_projeler\\IlkUygulamam\\IlkUygulamam.csproj",
       "packagesPath": "C:\\Users\\silas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silas\\IlkUygulamam\\obj\\",
+      "outputPath": "C:\\Users\\silas\\Desktop\\github_projeler\\IlkUygulamam\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\silas\\AppData\\Roaming\\NuGet\\NuGet.Config"
