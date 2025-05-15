@@ -141,7 +141,7 @@ class Program
         Console.WriteLine(weekDays[4]);
         Console.WriteLine(weekDays[5]);
         Console.WriteLine(weekDays[6]);
-
+        //deneme
         
 
     }
