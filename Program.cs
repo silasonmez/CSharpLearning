@@ -118,7 +118,7 @@ class Program
         int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
         int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
 
-        Console.WriteLine("Sophia: " + sophiaSum);
+        Console.WriteLine("Sophia:: " + sophiaSum);
         Console.WriteLine("Nicolas: " + nicolasSum);
         Console.WriteLine("Zahirah: " + zahirahSum);
         Console.WriteLine("Jeong: " + jeongSum);
