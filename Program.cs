@@ -35,11 +35,11 @@ class Program
 
         string name = "Bob";
         int counter = 3;
-        decimal celcius = 34.4m ; 
+        decimal celcius = 34.4m;
 
-        Console.WriteLine("HEllo," + name + "You have" + counter + "message in your inbox. The temperature is" + celcius  );
+        Console.WriteLine("HEllo," + name + "You have" + counter + "message in your inbox. The temperature is" + celcius);
 
-        
+
 
         Console.WriteLine("Hello\nWorld!");
         Console.WriteLine("Hello\tWorld!");
@@ -52,7 +52,7 @@ class Program
 
 
         string firstName = "Bob";
-        int widgetsSold = 7 ;
+        int widgetsSold = 7;
         Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
 
         //önce sayıalr toplanır ardından stringe çevrilir
@@ -81,8 +81,8 @@ class Program
         Console.WriteLine("Fourth: " + (++value));
 
 
-        int fahrenheit = 94 ; 
-        decimal temperature  =(( fahrenheit - 32m) *(5m/9m));
+        int fahrenheit = 94;
+        decimal temperature = ((fahrenheit - 32m) * (5m / 9m));
         Console.WriteLine(temperature);
 
 
@@ -143,6 +143,41 @@ class Program
         Console.WriteLine(weekDays[6]);
         //deneme
         
+        
+
+        // 1. Dictionary oluşturma
+        Dictionary<string, string> sozluk = new Dictionary<string, string>();
+
+        // 2. Eleman ekleme
+        sozluk.Add("elma", "apple");
+        sozluk.Add("armut", "pear");
+        sozluk["muz"] = "banana";  // Alternatif ekleme yöntemi
+
+        // 3. Değer okuma
+        Console.WriteLine("elma: " + sozluk["elma"]);
+
+        // 4. Değer güncelleme
+        sozluk["elma"] = "green apple";
+        Console.WriteLine("Güncellenmiş elma: " + sozluk["elma"]);
+
+        // 5. Eleman kontrolü
+        if (sozluk.ContainsKey("armut"))
+        {
+            Console.WriteLine("Armut sözlükte var.");
+        }
+
+        // 6. Eleman silme
+        sozluk.Remove("muz");
+
+        // 7. Tüm sözlüğü yazdırma
+        Console.WriteLine("\nSözlükteki tüm elemanlar:");
+        foreach (var item in sozluk)
+        {
+            Console.WriteLine($"{item.Key} => {item.Value}");
+        }
+
+        // 8. Eleman sayısı
+        Console.WriteLine($"\nSözlükte {sozluk.Count} eleman var.");
 
     }
 }
