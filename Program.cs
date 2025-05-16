@@ -141,9 +141,6 @@ class Program
         Console.WriteLine(weekDays[4]);
         Console.WriteLine(weekDays[5]);
         Console.WriteLine(weekDays[6]);
-        //deneme
-        
-        
 
         // 1. Dictionary oluşturma
         Dictionary<string, string> sozluk = new Dictionary<string, string>();
@@ -178,6 +175,19 @@ class Program
 
         // 8. Eleman sayısı
         Console.WriteLine($"\nSözlükte {sozluk.Count} eleman var.");
+
+
+        string meyve = "Elma";
+        Console.WriteLine(meyve.ToUpper());
+        Console.WriteLine(meyve.ToLower()); 
+        
+        string kelime = "merhaba";
+        Console.WriteLine(kelime.Substring(0, 3)); 
+
+       Console.WriteLine("merhaba".IndexOf("a")); // 4
+
+
+
 
     }
 }
