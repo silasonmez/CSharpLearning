@@ -124,15 +124,14 @@ class Program
         Console.WriteLine("Jeong: " + jeongSum);
 
         decimal sophiaScore;
-        decimal nicolasScore;
-        decimal zahirahScore;
-        decimal jeongScore;
+
 
         sophiaScore = (decimal)sophiaSum / currentAssignments;
         Console.WriteLine(sophiaScore);
 
         int[] array = new int[5];
-        string[] weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        string[] weekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+
 
         Console.WriteLine(weekDays[0]);
         Console.WriteLine(weekDays[1]);
@@ -179,15 +178,57 @@ class Program
 
         string meyve = "Elma";
         Console.WriteLine(meyve.ToUpper());
-        Console.WriteLine(meyve.ToLower()); 
-        
+        Console.WriteLine(meyve.ToLower());
+
         string kelime = "merhaba";
-        Console.WriteLine(kelime.Substring(0, 3)); 
+        Console.WriteLine(kelime.Substring(0, 3));
 
-       Console.WriteLine("merhaba".IndexOf("a")); // 4
+        Console.WriteLine("merhaba".IndexOf("a")); // 4
 
+
+        int x = 21;
+        do
+        {
+            Console.WriteLine("Koşul sağlanmamasına rağmen çalıştı");
+            x++;
+        } while (x < 20);
+        // while ile
+        int y = 21;
+        while (y < 20)
+        {
+            // Koşul sağlanmadığı için buraya hiç girmeyecek
+        }
+
+
+
+
+        for (int i = 1; 1 <= 10; i++)
+        {
+            if (i == 5)
+            {
+                break;
+            }
+            Console.WriteLine(i);
+        }
+
+
+
+
+/*  sonsuz döngü var
+        for (int i = 1; 1 <= 10; i++)
+        {
+            if (i == 5)
+            {
+                continue;
+            }
+            Console.WriteLine(i);
+        }
+
+*/ 
 
 
 
     }
 }
+
+
