@@ -214,18 +214,50 @@ class Program
 
 
 
-/*  sonsuz döngü var
-        for (int i = 1; 1 <= 10; i++)
+        /*  sonsuz döngü var
+                for (int i = 1; 1 <= 10; i++)
+                {
+                    if (i == 5)
+                    {
+                        continue;
+                    }
+                    Console.WriteLine(i);
+                }
+
+        */
+
+
+
+        Console.Write("Gün girin: ");
+        string gun = Console.ReadLine()!; // "!" = null gelmeyecek, eminim
+
+
+        switch (gun.ToLower())
         {
-            if (i == 5)
-            {
-                continue;
-            }
-            Console.WriteLine(i);
+            case "cumartesi":
+            case "pazar":
+                Console.WriteLine("Hafta sonu");
+                break;
+            default:
+                Console.WriteLine("Hafta içi");
+                break;
         }
 
-*/ 
 
+
+        List<string> sehirler = new List<string>();
+        sehirler.Add("İstanbul");
+        sehirler.Add("Ankara");
+
+        foreach (var sehir in sehirler)
+        {
+            Console.WriteLine(sehir);
+        }
+
+        DateTime simdi = DateTime.Now;
+        Console.WriteLine("Bugünün tarihi: " + simdi.ToString("dd.MM.yyyy"));
+        Console.WriteLine("Saat: " + simdi.ToString("HH:mm"));
+        Console.WriteLine("Gün: " + simdi.DayOfWeek);
 
 
     }
