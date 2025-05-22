@@ -228,9 +228,10 @@ class Program
 
 
 
+        //switch case kullanımı
+
         Console.Write("Gün girin: ");
         string gun = Console.ReadLine()!; // "!" = null gelmeyecek, eminim
-
 
         switch (gun.ToLower())
         {
@@ -245,6 +246,8 @@ class Program
 
 
 
+        //list kullanımı,
+
         List<string> sehirler = new List<string>();
         sehirler.Add("İstanbul");
         sehirler.Add("Ankara");
@@ -254,13 +257,94 @@ class Program
             Console.WriteLine(sehir);
         }
 
+
+
+        //güncel tarih-saat 
+
         DateTime simdi = DateTime.Now;
         Console.WriteLine("Bugünün tarihi: " + simdi.ToString("dd.MM.yyyy"));
         Console.WriteLine("Saat: " + simdi.ToString("HH:mm"));
         Console.WriteLine("Gün: " + simdi.DayOfWeek);
 
 
+        //toplama fonksiyonu çağırma 
+        int a = 10;
+        int b = 5;
+        int sonuc = Topla(a, b); // 👉 Fonksiyon çağrısı burada
+        Console.WriteLine("Toplam: " + sonuc);
+
+
+        //yaş hesaplama
+
+        Console.Write("Doğum yılınızı girin: ");
+        int dogumYili = Convert.ToInt32(Console.ReadLine());
+
+        int yas = Yashesapla(dogumYili); // 👈 Fonksiyon çağrısı
+        Console.WriteLine("Yaşınız: " + yas);
+
+
+        // void ve main method farkını gördüm 
+
+        string mesaj = SelamlaGetir("Sila");
+        Console.WriteLine(mesaj);
+
+        Selamla("sila");
+
+
+        //faktörüyel hesapladım, method kullandım.
+
+        Console.WriteLine("bir sayı girin:");
+        int sayi = Convert.ToInt32(Console.ReadLine());
+
+        int sonuc_1 = Faktoriyel(sayi);
+        Console.WriteLine(sayi + "!=" + sonuc_1);
+
+
+
     }
+
+    static int Topla(int a, int b)
+    {
+        return a + b;
+    }
+
+
+
+    static int Yashesapla(int dogumYili)
+    {
+        int suankiYil = DateTime.Now.Year;
+        return suankiYil - dogumYili;
+    }
+
+
+
+    static void Selamla(string isim)
+    {
+        Console.WriteLine("Merhaba," + isim + "!");
+    }
+
+
+    static string SelamlaGetir(string isim)
+    {
+        return "Merhabaaa, " + isim + "!";
+    }
+
+
+
+
+    static int Faktoriyel(int n)
+    {
+        if (n == 1) return 1;
+        return n * Faktoriyel(n - 1);
+    }
+
+
+
+
+
+
+
+
 }
 
 
