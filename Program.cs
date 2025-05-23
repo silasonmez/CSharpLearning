@@ -326,7 +326,7 @@ class Program
 
     static string SelamlaGetir(string isim)
     {
-        return "Merhabaaa, " + isim + "!";
+        return "Merhabaa, " + isim + "!";
     }
 
 
