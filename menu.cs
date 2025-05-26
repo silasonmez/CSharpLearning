@@ -76,7 +76,8 @@ class Program
         {
             b = SayiAl("Bölen (0 olamaz)");
         } while (b == 0);
-        Console.WriteLine("Bölüm: " + ((double)a / b));
+        double sonuc = (double)a / b;
+        Console.WriteLine($"Bölüm: {Math.Round(sonuc, 2)}");
     }
 
     static void YasHesapla()
@@ -90,7 +91,17 @@ class Program
     // Ortak sayı alma fonksiyonu
     static int SayiAl(string siralama)
     {
-        Console.Write($"{siralama} sayıyı girin: ");
-        return Convert.ToInt32(Console.ReadLine());
+        int sayi;
+        while (true)
+        {
+            Console.Write($"{siralama} sayıyı girin: ");
+            string? giris = Console.ReadLine();
+
+            if (int.TryParse(giris, out sayi))
+                return sayi;
+            else
+                Console.WriteLine("Geçersiz giriş! Lütfen bir tam sayı girin.");
+        }
     }
+
 }
