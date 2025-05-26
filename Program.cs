@@ -3,13 +3,13 @@ class Program
 {
     static void Main()
     {
-        /*
+        ee
         Console.WriteLine(3+3);
         Console.WriteLine("sila");
         Console.WriteLine("3+3");
         Console.WriteLine('s');
         Console.WriteLine(true);
-
+/*git push
         //string tanımladım.
         string firstName;
         firstName = "furkan";
