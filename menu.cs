@@ -20,6 +20,7 @@ class Program
             Console.WriteLine("[3] Çarpma");
             Console.WriteLine("[4] Bölme");
             Console.WriteLine("[5] Yaş Hesapla");
+            Console.WriteLine("[7] Tahmin Oyunu");
             Console.WriteLine("[6] Çıkış");
             Console.Write("Seçiminizi yapın: ");
 
@@ -46,6 +47,10 @@ class Program
                     devam = false;
                     Console.WriteLine("Programdan çıkılıyor...");
                     break;
+                case "7":
+                    TahminOyunu();
+                    break;
+
                 default:
                     Console.WriteLine("Geçersiz seçim!");
                     break;
@@ -99,6 +104,29 @@ class Program
         int yas = DateTime.Now.Year - dogumYili;
         Console.WriteLine("Yaşınız: " + yas);
     }
+        static void TahminOyunu()
+        {
+            Random rnd = new Random();
+            int rastgeleSayi = rnd.Next(1, 101); // 1-100 arası
+            int tahmin;
+            int denemeSayisi = 0;
+
+            Console.WriteLine("1 ile 100 arasında bir sayı tuttum. Tahmin etmeye çalış!");
+
+            do
+            {
+                tahmin = SayiAl("Tahmin");
+                denemeSayisi++;
+
+                if (tahmin < rastgeleSayi)
+                    Console.WriteLine("Daha büyük bir sayı girin.");
+                else if (tahmin > rastgeleSayi)
+                    Console.WriteLine("Daha küçük bir sayı girin.");
+                else
+                    Console.WriteLine($"Tebrikler! {denemeSayisi}. denemede doğru tahmin ettiniz.");
+
+            } while (tahmin != rastgeleSayi);
+        }
 
     // Ortak sayı alma fonksiyonu
     static int SayiAl(string siralama)
