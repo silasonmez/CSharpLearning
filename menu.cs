@@ -4,10 +4,16 @@ class Program
 {
     static void Main()
     {
+
+        Console.Write("Adınızı girin: ");
+        string? kullaniciAdi = Console.ReadLine();
         bool devam = true;
 
         while (devam)
         {
+
+            Console.Clear(); // ekranı temizle
+            Console.WriteLine($"Merhaba, {kullaniciAdi}!");
             Console.WriteLine("\n===== MENÜ =====");
             Console.WriteLine("[1] Toplama");
             Console.WriteLine("[2] Çıkarma");
@@ -16,7 +22,7 @@ class Program
             Console.WriteLine("[5] Yaş Hesapla");
             Console.WriteLine("[6] Çıkış");
             Console.Write("Seçiminizi yapın: ");
-            
+
             string secim = Console.ReadLine()!;
 
             switch (secim)
@@ -43,6 +49,12 @@ class Program
                 default:
                     Console.WriteLine("Geçersiz seçim!");
                     break;
+
+            }
+                if (devam)
+            {
+                Console.Write("\nDevam etmek için bir tuşa basın...");
+                Console.ReadKey();
             }
         }
     }
