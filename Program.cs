@@ -3,7 +3,7 @@ class Program
 {
     static void Main()
     {
-        ee
+        
         Console.WriteLine(3+3);
         Console.WriteLine("sila");
         Console.WriteLine("3+3");

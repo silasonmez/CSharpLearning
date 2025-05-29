@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-
+        Console.Write("HOŞGELDİNİZ! ");
         Console.Write("Adınızı girin: ");
         string? kullaniciAdi = Console.ReadLine();
         bool devam = true;
